@@ -1,7 +1,23 @@
 body {
   background-color: black;
   border-color: white;
+  text-align: center;
 }
 p {
   color: white;
+}
+button {
+  font-size: 24px;
+}
+input {
+  font-size: 24px;
+}
+.calculator {
+  display: block;
+}
+.buttons {
+  display: grid;
+  margin: auto;
+  width: 300px;
+  grid-template-columns: repeat(4, 1fr);
 }
