@@ -1,6 +1,7 @@
 export const inputAndResult = document.getElementById("inputs");
 export const history = document.querySelector("#history");
-export const equalButton = document.getElementById("equal")
+export const buttons = ["clear", "backspace", "percentage", "divide", "multiply", "minus", "plus", "result", "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+export let historyList = [];
 
 export function clearInput() {
   inputAndResult.value = "";
@@ -13,13 +14,13 @@ export function backspaceInput() {
 export function percentageInput() {
   if (!inputAndResult.value.includes("%")) {
     inputAndResult.value += "%";
-  };
+  }
 }
 
 export function divideInput() {
   if (!inputAndResult.value.includes("/")) {
     inputAndResult.value += "/";
-  };
+  }
 }
 export function sevenInput() {
   inputAndResult.value += 7;
@@ -36,7 +37,7 @@ export function nineInput() {
 export function multiplyInput() {
   if (!inputAndResult.value.includes("*")) {
     inputAndResult.value += "*";
-  };
+  }
 }
 
 export function fourInput() {
@@ -54,7 +55,7 @@ export function sixInput() {
 export function minusInput() {
   if (!inputAndResult.value.includes("-")) {
     inputAndResult.value += "-";
-  };
+  }
 }
 
 export function oneInput() {
@@ -72,9 +73,19 @@ export function threeInput() {
 export function plusInput() {
   if (!inputAndResult.value.includes("+")) {
     inputAndResult.value += "+";
-  };
+  }
 }
 
 export function zeroInput() {
   inputAndResult.value += 0;
+}
+
+export function resultInput() {
+  const input = inputAndResult.value;
+  const result = math.evaluate(input);
+  inputAndResult.textContent = result;
+  inputAndResult.value = result;
+  historyList.push(`${input} = ${result}`);
+  history.textContent = historyList.join("\n");
+  console.log(result);
 }
