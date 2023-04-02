@@ -14,11 +14,19 @@ input {
   text-align: right;
 }
 .calculator {
-  display: block;
+  flex-direction: column;
+}
+.input {
+  position: relative;
+  justify-content: center;
 }
 .buttons {
   display: grid;
   margin: auto;
   width: 300px;
   grid-template-columns: repeat(4, 1fr);
+}
+.history {
+  font-size: 12px;
+  margin: 0;
 }
