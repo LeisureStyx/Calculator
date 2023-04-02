@@ -1,7 +1,25 @@
-const inputAndResult = document.getElementById("inputs");
-const history = document.querySelector("#history");
-let historyList = [];
+import { inputAndResult, history, clearInput, backspaceInput, percentageInput, divideInput, multiplyInput, minusInput, plusInput, zeroInput,
+  oneInput, twoInput, threeInput, fourInput, fiveInput, sixInput, sevenInput, eightInput, nineInput } from "./buttons.js";
 
+document.getElementById("clear").addEventListener("click", clearInput);
+document.getElementById("backspace").addEventListener("click", backspaceInput);
+document.getElementById("percentage").addEventListener("click", percentageInput);
+document.getElementById("divide").addEventListener("click", divideInput);
+document.getElementById("multiply").addEventListener("click", multiplyInput);
+document.getElementById("minus").addEventListener("click", minusInput);
+document.getElementById("plus").addEventListener("click", plusInput);
+document.getElementById("zero").addEventListener("click", zeroInput);
+document.getElementById("one").addEventListener("click", oneInput);
+document.getElementById("two").addEventListener("click", twoInput);
+document.getElementById("three").addEventListener("click", threeInput);
+document.getElementById("four").addEventListener("click", fourInput);
+document.getElementById("five").addEventListener("click", fiveInput);
+document.getElementById("six").addEventListener("click", sixInput);
+document.getElementById("seven").addEventListener("click", sevenInput);
+document.getElementById("eight").addEventListener("click", eightInput);
+document.getElementById("nine").addEventListener("click", nineInput);
+
+let historyList = [];
 
 inputAndResult.addEventListener("keyup", (event) => {
   if (event.key === "Enter") {
@@ -14,11 +32,3 @@ inputAndResult.addEventListener("keyup", (event) => {
     console.log(result);
   }
 });
-
-function clearInput() {
-  inputAndResult.value = "";
-}
-
-function backspaceInput() {
-  inputAndResult.value = inputAndResult.value.slice(0, -1);
-}
