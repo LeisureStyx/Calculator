@@ -1,0 +1,44 @@
+[
+  {
+    "Title": "Ruby Summoner",
+    "Name": "Seria",
+    "FullName": "Seria (Ruby Summoner)",
+    "UnitNumber": 8589,
+    "Element": "Fire"
+  },
+  {
+    "Title": "Glacial",
+    "Name": "Vail & Vidron",
+    "FullName": "Vail & Vidron (Glacial)",
+    "UnitNumber": 8396,
+    "Element": "Water"
+  },
+  {
+    "Title": "Maverick of Elysia",
+    "Name": "Nia",
+    "FullName": "Nia (Maverick of Elysia)",
+    "UnitNumber": 8452,
+    "Element": "Earth"
+  },
+  {
+    "Title": "True Revelation",
+    "Name": "Daltisk",
+    "FullName": "Daltisk (True Revelation)",
+    "UnitNumber": 1745,
+    "Element": "Thunder"
+  },
+  {
+    "Title": "Metal Flower",
+    "Name": "Ionia",
+    "FullName": "Ionia (Metal Flower)",
+    "UnitNumber": 1588,
+    "Element": "Light"
+  },
+  {
+    "Title": "Disnomian Emperor",
+    "Name": "Shion",
+    "FullName": "Shion (Disnomian Emperor)",
+    "UnitNumber": 1590,
+    "Element": "Dark"
+  }
+]
