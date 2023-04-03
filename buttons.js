@@ -1,6 +1,8 @@
 export const inputAndResult = document.getElementById("inputs");
 export const history = document.querySelector("#history");
-export const buttons = ["clear", "backspace", "percentage", "divide", "multiply", "minus", "plus", "result", "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+export const buttons = [
+  "clear", "backspace", "percentage", "divide", "multiply", "minus", "plus", "result", "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "secret"
+];
 export let historyList = [];
 
 export function clearInput() {

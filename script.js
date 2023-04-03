@@ -58,6 +58,26 @@ buttons.forEach(button => {
       case "result":
         resultInput();
         break;
+      case "secret":
+        const secretButton = document.getElementById("secret");
+        let clickCount = 0;
+        let lastClicktime = 0;
+
+        secretButton.addEventListener("click", () => {
+          const now = new Date().getTime();
+
+          if (inputAndResult.value.trim() === "420") {
+            clickCount++;
+            if (clickCount === 3 && now - lastClicktime <= 3000) {
+              window.location.href = "TotallyNotSecret/secret.html";
+            } else {
+              lastClicktime = now;
+            }
+          } else {
+            clickCount = 0;
+            lastClicktime = 0;
+          }
+        })
     }
   });
 });
