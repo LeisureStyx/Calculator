@@ -78,7 +78,6 @@ buttons.forEach(button => {
       case "result":
         resultInput();
         break;
-      case "secret":
     }
   });
 });
